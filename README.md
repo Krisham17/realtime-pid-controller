@@ -115,15 +115,6 @@ gcc -o lab35 src/lab35.c -lpthread -lm && ./lab35
 
 **Per-element threading in lab35.** Spawning one thread per matrix output element (324 threads for an 18x18 result) is pedagogically motivated — it demonstrates thread data partitioning — rather than being an optimal strategy. In practice, thread-pool or BLAS approaches would be used for matrix operations.
 
----
-
-## Future Improvements
-
-- Add command-line argument parsing so PID gains can be set without an interactive menu
-- Implement a thread-safe ring buffer to log control signals and encoder data for post-run analysis without halting the control loop
-- Port the derivative filter to a proper bilinear (Tustin) discretization for more accurate frequency response
-- Add feed-forward compensation for known reference trajectories to reduce transient tracking error
-- Replace the load generator with a configurable load level (number of threads, memory size) for more systematic performance characterization
 
 ---
 
